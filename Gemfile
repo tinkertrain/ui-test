@@ -12,10 +12,15 @@ gem 'sinatra'
 gem 'rake'
 gem 'rack-test', '>= 0.5.6'
 
-gem 'guard'
-gem 'guard-sass'
-gem 'guard-coffeescript'
-gem 'haml', '>= 3.0'
-gem 'sass' if RUBY_VERSION < "2.0"
-gem 'coffee-script', '>= 2.0'
+group 'assets' do
+  gem 'guard'
+  gem 'guard-sass'
+  gem 'guard-coffeescript'
+  gem 'haml', '>= 3.0'
+  gem 'sass' if RUBY_VERSION < "2.0"
+  gem 'coffee-script', '>= 2.0'
+end
 
+group 'test' do
+  gem 'cucumber-sinatra'
+end
