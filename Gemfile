@@ -20,7 +20,3 @@ group 'assets' do
   gem 'sass' if RUBY_VERSION < "2.0"
   gem 'coffee-script', '>= 2.0'
 end
-
-group 'test' do
-  gem 'cucumber-sinatra'
-end
