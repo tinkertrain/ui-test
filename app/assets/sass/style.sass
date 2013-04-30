@@ -21,6 +21,14 @@ body
 ul
   list-style: none
 
+// Logo
+
+.logo
+  position: absolute
+  left: 50%
+  margin-left: -41px
+  top: 9px
+
 // Buttons
 .button
   background-color: #1E344C
@@ -64,22 +72,26 @@ h3
 
 .navigation
   font-family: arial
+  text-align: center
+  background-color: #124385
   ul
-    height:  40px
-    background-color: #124385
+    display: inline-block
+    height:  60px
     margin: 0
     li
+      display: inline-block
+      text-align: left
       float: left
-      height: 40px
+      height: 60px
       margin: 0
       background-color: #124385
-      border-right: 1px solid #1E344C
-      border-left: 1px solid #084897
       width: 150px
+      &:nth-child(3)
+        margin-right: 150px
       a
         color: white
         text-decoration: none
-        line-height: 40px
+        line-height: 60px
         padding: 0 15px
         &:hover
           text-decoration: underline
@@ -87,10 +99,13 @@ h3
 .sub-navigation
   font-family: arial
   margin-bottom: 60px
+  text-align: center
+  background-color: #E5EBEE
   ul
+    display: inline-block
     height:  60px
-    background-color: #E5EBEE
     margin: 0
+    padding: 0
     li
       float: left
       height: 60px

@@ -2,8 +2,7 @@
 require 'sinatra'
 require 'sinatra/base'
 
-class LonelyPlanet < Sinatra::Base
-  get '/' do
-    haml :index, :layout => :layout
-  end
+get '/' do
+  haml :index, :layout => :layout
 end
+

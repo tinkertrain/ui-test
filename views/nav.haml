@@ -1,23 +1,17 @@
+- core_navigation = ['Home', 'Destinations', 'Shop', 'Hotels', 'Flights', 'Contact']
+- sub_navigation = ['Images', 'Video', 'Games']
+
+%img.logo{src: "images/logo.png"}
 .navigation
   %ul
-    %li
-      %a{href: '#'} Home
-    %li
-      %a{href: '#'} Destinations
-    %li
-      %a{href: '#'} Shop
-    %li
-      %a{href: '#'} Hotels
-    %li
-      %a{href: '#'} Flights
-    %li
-      %a{href: '#'} Contact
+    - core_navigation.each do |item|
+      %li
+        %a{href: '#'}
+          = item
 
 .sub-navigation
   %ul
-    %li
-      %a{href: '#'} Images
-    %li
-      %a{href: '#'} Video
-    %li
-      %a{href: '#'} Games
+    - sub_navigation.each do |item|
+      %li
+        %a{href: '#'}
+          = item

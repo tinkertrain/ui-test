@@ -36,24 +36,24 @@ Guard will watch for any changes that you make to app/assets and publish them to
 
 ## HTML
 
-Update the html structure to use a style you would adopt in a large project.
-Feel free to use as many/few html5 elements as you would like.
-Comment on any decisions you have made that may be of interest.
+- Update the html structure to use a style you would adopt in a large project.
+- Feel free to use as many/few html5 elements as you would like.
+- Comment on any decisions you have made that may be of interest.
 
 ## CSS
 
-The css is written in Sass. It's ugly and has no real structure to it.
-Refactor into a structure you would be happy with.
-Comment on any decisions you have made that may be of interest.
+- The css is written in Sass. It's ugly and has no real structure to it.
+- Refactor into a structure you would be happy with.
+- Comment on any decisions you have made that may be of interest.
 
 ## JS
 
-There is a read more widget and a lightbox implemented on the page.
-The Javascript is written in coffeescript. It is fully functional but far from testable.
-Refactor it into your preferred style.
-Your code should be performant, scalable and testable.
-The finished product should be user friendly.
-Comment on any decisions you have made that may be of interest.
+- There is a read more widget and a lightbox implemented on the page.
+- The Javascript is written in coffeescript. It is fully functional but far from testable.
+- Refactor it into your preferred style.
+- Your code should be performant, scalable and testable.
+- The finished product should be user friendly.
+- Comment on any decisions you have made that may be of interest.
 
 
 ===========================

@@ -26,6 +26,13 @@ ul {
   list-style: none;
 }
 
+.logo {
+  position: absolute;
+  left: 50%;
+  margin-left: -41px;
+  top: 9px;
+}
+
 .button {
   background-color: #1e344c;
   padding: 10px;
@@ -69,25 +76,30 @@ h3 {
 
 .navigation {
   font-family: arial;
+  text-align: center;
+  background-color: #124385;
 }
 .navigation ul {
-  height: 40px;
-  background-color: #124385;
+  display: inline-block;
+  height: 60px;
   margin: 0;
 }
 .navigation ul li {
+  display: inline-block;
+  text-align: left;
   float: left;
-  height: 40px;
+  height: 60px;
   margin: 0;
   background-color: #124385;
-  border-right: 1px solid #1e344c;
-  border-left: 1px solid #084897;
   width: 150px;
+}
+.navigation ul li:nth-child(3) {
+  margin-right: 150px;
 }
 .navigation ul li a {
   color: white;
   text-decoration: none;
-  line-height: 40px;
+  line-height: 60px;
   padding: 0 15px;
 }
 .navigation ul li a:hover {
@@ -97,11 +109,14 @@ h3 {
 .sub-navigation {
   font-family: arial;
   margin-bottom: 60px;
+  text-align: center;
+  background-color: #e5ebee;
 }
 .sub-navigation ul {
+  display: inline-block;
   height: 60px;
-  background-color: #e5ebee;
   margin: 0;
+  padding: 0;
 }
 .sub-navigation ul li {
   float: left;
