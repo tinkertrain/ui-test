@@ -166,15 +166,23 @@ h3 {
 ul {
   list-style: none; }
 
-.navigation {
+footer {
+  font-family: arial;
+  overflow: hidden;
+  font-size: 12px;
+  background-color: #e5ebee;
+  margin-top: 50px;
+  padding-top: 20px; }
+
+header nav {
   font-family: arial;
   text-align: center;
   background-color: #124385; }
-  .navigation ul {
+  header nav ul {
     display: inline-block;
     height: 60px;
     margin: 0; }
-    .navigation ul li {
+    header nav ul li {
       display: inline-block;
       text-align: left;
       float: left;
@@ -182,14 +190,12 @@ ul {
       margin: 0;
       background-color: #124385;
       width: 150px; }
-      .navigation ul li:nth-child(3) {
-        margin-right: 150px; }
-      .navigation ul li a {
+      header nav ul li a {
         color: white;
         text-decoration: none;
         line-height: 60px;
         padding: 0 15px; }
-        .navigation ul li a:hover {
+        header nav ul li a:hover {
           text-decoration: underline; }
 
 .sub-navigation {
@@ -215,38 +221,25 @@ ul {
         .sub-navigation ul li a:hover {
           text-decoration: underline; }
 
-.logo {
-  position: absolute;
-  left: 50%;
-  margin-left: -41px;
-  top: 9px; }
-
-footer {
-  font-family: arial;
-  overflow: hidden;
-  font-size: 12px;
-  background-color: #e5ebee;
-  margin-top: 50px;
-  padding-top: 20px; }
-  footer nav {
-    float: left;
-    width: 25%;
-    margin-bottom: 20px; }
-  footer h3 {
-    text-transform: uppercase;
-    margin-bottom: 20px; }
-  footer ul {
+footer nav {
+  float: left;
+  width: 25%;
+  margin-bottom: 20px; }
+footer h3 {
+  text-transform: uppercase;
+  margin-bottom: 20px; }
+footer ul {
+  margin: 0;
+  padding: 0; }
+  footer ul li {
     margin: 0;
-    padding: 0; }
-    footer ul li {
-      margin: 0;
-      display: block;
-      padding: 10px 0; }
-  footer a {
-    text-decoration: none;
-    color: #1e344c; }
-    footer a:hover {
-      text-decoration: underline; }
+    display: block;
+    padding: 10px 0; }
+footer a {
+  text-decoration: none;
+  color: #1e344c; }
+  footer a:hover {
+    text-decoration: underline; }
 
 .container {
   width: 1000px;

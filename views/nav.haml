@@ -1,16 +1,14 @@
-- core_navigation = ['Home', 'Destinations', 'Shop', 'Hotels', 'Flights', 'Contact']
+- core_navigation = ['Home','Destinations', 'Shop', 'Hotels', 'Flights', 'Contact']
 - sub_navigation = ['Images', 'Video', 'Games']
 
-%header
-  %img.logo{src: "images/logo.png"}
-  .navigation
+%header{:role => "banner"}
+  %nav{:role => "navigation"}
     %ul
       - core_navigation.each do |item|
         %li
           %a{href: '#'}
             = item
-
-  .sub-navigation
+  .sub-navigation{:role => "navigation"}
     %ul
       - sub_navigation.each do |item|
         %li
