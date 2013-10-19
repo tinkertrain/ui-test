@@ -5,23 +5,19 @@
 @import base/normalize
 
 // ==========================================================================
+// Elements
+// ==========================================================================
+
+@import elements/buttons
+@import elements/lightbox
+
+// ==========================================================================
 // Sections
 // ==========================================================================
 
-// Header
-// -------------------------------------------------------------------------
-
+@import sections/global
 @import sections/header
-
-// Footer
-// -------------------------------------------------------------------------
-
 @import sections/footer
-
-body
-  font-family: Georgia
-  padding: 0
-  margin: 0
 
 .container
   width: 1000px
@@ -38,33 +34,7 @@ body
     text-transform: uppercase
     letter-spacing: 0.01em
 
-ul
-  list-style: none
 
-// Logo
-
-.logo
-  position: absolute
-  left: 50%
-  margin-left: -41px
-  top: 9px
-
-// Buttons
-.button
-  background-color: #1E344C
-  padding: 10px
-  color: white
-  margin-top: 10px
-  text-decoration: none
-
-// Headings
-
-h1
-  font-size: 20px
-
-h3
-  font-size: 14px
-  color: #133944
 
 
 // Image section
@@ -87,17 +57,3 @@ h3
   height: 150px
   margin-bottom: 20px
   overflow: hidden
-
-// Lightbox
-.lightbox
-  background-color: rgba(0,0,0,0.7)
-  position: fixed
-  top: 0
-  left: 0
-  right: 0
-  bottom: 0
-  .lightboxImage
-    position: absolute
-    left: 30%
-    top: 30%
-    border: 10px solid white
