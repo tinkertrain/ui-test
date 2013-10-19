@@ -15,3 +15,11 @@
   - Base: all styles and helpers are to be located here:
     - normalize.css (my choice whe it comes to a browser styles reset)
     - things like mixins, colour palette, fonts import, etc. would be located in their own file in this folder
+  - Elements: Small modules that can be used through the site are located here:
+      - Buttons
+      - Lightbox
+  - Sections: Sections of the page
+      - Global: General styles that would apply to every page on the site
+      - Header
+          - Navigation
+      - Footer
