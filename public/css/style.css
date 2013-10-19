@@ -154,7 +154,9 @@ table {
     border: 10px solid white; }
 
 body {
-  font-family: Georgia; }
+  font-family: Georgia;
+  font-size: 16px;
+  line-height: 1.5; }
 
 h1 {
   font-size: 20px; }
