@@ -5,7 +5,10 @@ button
   text-decoration: none
   border: none
   text-shadow: 1px 1px 0 black
+  box-shadow: inset 3px 3px 0 lighten($button, 10%)
   &:hover
     background-color: darken($button, 10%)
+    box-shadow: inset 3px 3px 0 $button
   &:active
     background-color: lighten($button, 10%)
+    box-shadow: inset 3px 3px 0 lighten($button, 20%)
