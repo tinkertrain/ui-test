@@ -27,6 +27,14 @@
       - Footer
       - Navigation
       - Body (the main section of the page)
+
+
+#JS
+
+- First thing, move to plain JS instead of coffescript (style choosing)
+- There are 2 functionalities in the page, both in the same file (readmore and lightbox). Separate them into their own file as modules.
+
+
       
 #Detailed changes
 
@@ -36,6 +44,7 @@
 - Try to use only margin bottom in elements
 - Setup colour variables for easier maintenance
 - Added `box-sizing: border-box` to everything
+
 
 ##Header
 
@@ -54,9 +63,19 @@
 
 - Wrapped in an `<article>` tag each mini article, as they function independently (if they were taken out the page they still make sense).
 - Removed the `<a class="button">` for a real `<button>`
-- Image section: 
-    - Implemented as an unordered list
-    - Removed classes like `.first-image` and `.image-container`
-    - Instead use `<figure>` and `<figcaption>` and css pseudo classes
-    - Removed floats, use `display: inline-block` instead
+
+
+###Image section: 
+
+- Implemented as an unordered list
+- Removed classes like `.first-image` and `.image-container`
+- Instead use `<figure>` and `<figcaption>` and css pseudo classes
+- Removed floats, use `display: inline-block` instead
+    
+
+###Readmore
+
+- Grouped all the functionality into a single object "readMore"
+- Uses CSS transitions
+- Graceful degradation: this functionality only exists if JS is enabled in the browser, if JS is unavailable, all the text shows and there's no "read more" button.
  
