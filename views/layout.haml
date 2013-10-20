@@ -13,7 +13,7 @@
     %link{rel: "stylesheet", href: 'css/style.css'}
 
   %body
-    = haml :nav
-    = yield
-    = haml :footer
-
+    %div.container
+      = haml :nav
+      = yield
+      = haml :footer
