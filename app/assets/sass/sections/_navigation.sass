@@ -8,45 +8,37 @@ nav
   a
     display: block
     width: 100%
+    color: $text
 
 // Header Navigation
-nav.main
-  text-align: center
-  background-color: $brand
+
+header
   ul
+    text-align: center
     height:  60px
     line-height: 60px
     li
       display: inline-block
       vertical-align: middle
-      text-align: center
+
+nav.main
+  background-color: $brand
+  li
+    width: 16%
+    &:first-child
+      background: transparent url('../images/logo.png') 50% 10px no-repeat
+      @extend %ir
+    a
       height: 60px
-      margin: 0
-      width: 16%
-      &:first-child
-        background: transparent url('../images/logo.png') 50% 10px no-repeat
-        @extend %ir
-      a
-        height: 60px
-        color: white
-        text-decoration: none
+      color: white
 
 .subnavigation
   margin-bottom: 3em
-  text-align: center
   background-color: $bg_light
-  ul
-    height:  60px
-    li
-      display: inline-block
-      height: 60px
-      width: auto
-      margin: 0
-      a
-        color: $text
-        text-decoration: none
-        line-height: 60px
-        padding: 0 1em
+  li
+    width: auto
+    a
+      padding: 0 1em
 
 // Footer Navigation
 footer
@@ -59,5 +51,3 @@ footer
   h3
     text-transform: uppercase
     margin-bottom: 1.2em
-  a
-    text-decoration: none

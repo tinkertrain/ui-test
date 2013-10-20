@@ -133,7 +133,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-nav.main ul li:first-child {
+nav.main li:first-child {
   font: 0/0 a;
   text-shadow: none;
   color: transparent; }
@@ -144,11 +144,14 @@ button {
   color: white;
   text-decoration: none;
   border: none;
-  text-shadow: 1px 1px 0 black; }
+  text-shadow: 1px 1px 0 black;
+  box-shadow: inset 3px 3px 0 #2c4d71; }
   button:hover {
-    background-color: #101b27; }
+    background-color: #101b27;
+    box-shadow: inset 3px 3px 0 #1e344c; }
   button:active {
-    background-color: #2c4d71; }
+    background-color: #2c4d71;
+    box-shadow: inset 3px 3px 0 #3b6695; }
 
 .lightbox {
   background-color: rgba(0, 0, 0, 0.7);
@@ -180,8 +183,10 @@ h1 {
 h2 {
   font-size: 1.25em; }
 
-a:hover {
-  text-decoration: underline; }
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
 
 footer {
   overflow: hidden;
@@ -198,44 +203,34 @@ nav {
     padding: 0; }
   nav a {
     display: block;
-    width: 100%; }
+    width: 100%;
+    color: #133944; }
+
+header ul {
+  text-align: center;
+  height: 60px;
+  line-height: 60px; }
+  header ul li {
+    display: inline-block;
+    vertical-align: middle; }
 
 nav.main {
-  text-align: center;
   background-color: #124385; }
-  nav.main ul {
-    height: 60px;
-    line-height: 60px; }
-    nav.main ul li {
-      display: inline-block;
-      vertical-align: middle;
-      text-align: center;
+  nav.main li {
+    width: 16%; }
+    nav.main li:first-child {
+      background: transparent url("../images/logo.png") 50% 10px no-repeat; }
+    nav.main li a {
       height: 60px;
-      margin: 0;
-      width: 16%; }
-      nav.main ul li:first-child {
-        background: transparent url("../images/logo.png") 50% 10px no-repeat; }
-      nav.main ul li a {
-        height: 60px;
-        color: white;
-        text-decoration: none; }
+      color: white; }
 
 .subnavigation {
   margin-bottom: 3em;
-  text-align: center;
   background-color: #e5ebee; }
-  .subnavigation ul {
-    height: 60px; }
-    .subnavigation ul li {
-      display: inline-block;
-      height: 60px;
-      width: auto;
-      margin: 0; }
-      .subnavigation ul li a {
-        color: #133944;
-        text-decoration: none;
-        line-height: 60px;
-        padding: 0 1em; }
+  .subnavigation li {
+    width: auto; }
+    .subnavigation li a {
+      padding: 0 1em; }
 
 footer nav {
   display: inline-block;
@@ -246,8 +241,6 @@ footer nav {
 footer h3 {
   text-transform: uppercase;
   margin-bottom: 1.2em; }
-footer a {
-  text-decoration: none; }
 
 .container {
   width: 100%;
