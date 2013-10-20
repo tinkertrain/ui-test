@@ -7,7 +7,6 @@
       var sectionHeight = this.$section.height();
       this.insertButton();
       this.$section.height(400).addClass('readingAllShadow');
-      console.log(sectionHeight);
       this.showHide(sectionHeight);
     },
 
