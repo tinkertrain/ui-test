@@ -1,56 +1,62 @@
+nav
+  font-family: arial
+
 // Header Navigation
 header
-  nav
-    font-family: arial
+  nav.main
     text-align: center
-    background-color: #124385
+    background-color: $brand
     ul
+      width: 100%
       display: inline-block
       height:  60px
       margin: 0
+      padding: 0
+      line-height: 60px
       li
         display: inline-block
-        text-align: left
-        float: left
+        vertical-align: middle
+        text-align: center
         height: 60px
         margin: 0
-        background-color: #124385
-        width: 150px
+        width: 16%
+        &:first-child
+          background: transparent url('../images/logo.png') 50% 10px no-repeat
+          @extend %ir
         a
+          display: block
+          width: 100%
+          height: 60px
           color: white
           text-decoration: none
-          line-height: 60px
-          padding: 0 15px
           &:hover
             text-decoration: underline
 
-.sub-navigation
-  font-family: arial
-  margin-bottom: 60px
+.subnavigation
+  margin-bottom: 3em
   text-align: center
-  background-color: #E5EBEE
+  background-color: $bg_light
   ul
-    display: inline-block
     height:  60px
     margin: 0
     padding: 0
     li
-      float: left
+      display: inline-block
       height: 60px
       width: auto
       margin: 0
       a
-        color: #133944
+        display: block
+        color: $text
         text-decoration: none
         line-height: 60px
-        padding: 0 15px
+        padding: 0 1em
         &:hover
           text-decoration: underline
 
 // Footer Navigation
 footer
   nav
-    float: left
     width: 25%
     margin-bottom: 20px
   h3

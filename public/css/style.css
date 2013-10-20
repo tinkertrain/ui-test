@@ -133,6 +133,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+header nav.main ul li:first-child {
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent; }
+
 .button {
   background-color: #1e344c;
   padding: 10px;
@@ -156,7 +161,8 @@ table {
 body {
   font-family: Georgia;
   font-size: 16px;
-  line-height: 1.5; }
+  line-height: 1.5;
+  color: #133944; }
 
 h1 {
   font-size: 20px; }
@@ -176,55 +182,60 @@ footer {
   margin-top: 50px;
   padding-top: 20px; }
 
-header nav {
-  font-family: arial;
+nav {
+  font-family: arial; }
+
+header nav.main {
   text-align: center;
   background-color: #124385; }
-  header nav ul {
-    display: inline-block;
-    height: 60px;
-    margin: 0; }
-    header nav ul li {
-      display: inline-block;
-      text-align: left;
-      float: left;
-      height: 60px;
-      margin: 0;
-      background-color: #124385;
-      width: 150px; }
-      header nav ul li a {
-        color: white;
-        text-decoration: none;
-        line-height: 60px;
-        padding: 0 15px; }
-        header nav ul li a:hover {
-          text-decoration: underline; }
-
-.sub-navigation {
-  font-family: arial;
-  margin-bottom: 60px;
-  text-align: center;
-  background-color: #e5ebee; }
-  .sub-navigation ul {
+  header nav.main ul {
+    width: 100%;
     display: inline-block;
     height: 60px;
     margin: 0;
+    padding: 0;
+    line-height: 60px; }
+    header nav.main ul li {
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center;
+      height: 60px;
+      margin: 0;
+      width: 16%; }
+      header nav.main ul li:first-child {
+        background: transparent url("../images/logo.png") 50% 10px no-repeat; }
+      header nav.main ul li a {
+        display: block;
+        width: 100%;
+        height: 60px;
+        color: white;
+        text-decoration: none; }
+        header nav.main ul li a:hover {
+          text-decoration: underline; }
+
+.subnavigation {
+  margin-bottom: 3em;
+  text-align: center;
+  background-color: #e5ebee; }
+  .subnavigation ul {
+    height: 60px;
+    margin: 0;
     padding: 0; }
-    .sub-navigation ul li {
-      float: left;
+    .subnavigation ul li {
+      display: inline-block;
       height: 60px;
       width: auto;
       margin: 0; }
-      .sub-navigation ul li a {
+      .subnavigation ul li a {
+        display: block;
         color: #133944;
         text-decoration: none;
         line-height: 60px;
-        padding: 0 15px; }
-        .sub-navigation ul li a:hover {
+        padding: 0 1em; }
+        .subnavigation ul li a:hover {
           text-decoration: underline; }
 
 footer nav {
-  float: left;
   width: 25%;
   margin-bottom: 20px; }
 footer h3 {
