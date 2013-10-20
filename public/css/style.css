@@ -258,21 +258,22 @@ footer a {
     text-transform: uppercase;
     letter-spacing: 0.01em; }
 
-.images-container {
+section.pictures .images-container {
   margin-top: 50px;
   overflow: hidden; }
-
-.first-image, .second-image, .third-image {
-  float: left;
+section.pictures ul {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+section.pictures li {
+  display: inline-block;
   width: 30%;
-  margin-right: 5%; }
-  .first-image img, .second-image img, .third-image img {
+  margin-right: 3%; }
+  section.pictures li img {
     max-width: 100%; }
-
-.third-image {
-  margin-right: 0; }
-
-.image-container {
+  section.pictures li:last-child {
+    margin-right: 0; }
+section.pictures figure {
   height: 150px;
   margin-bottom: 20px;
   overflow: hidden; }

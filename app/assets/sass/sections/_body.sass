@@ -13,26 +13,26 @@
     text-transform: uppercase
     letter-spacing: 0.01em
 
-
-
-
 // Image section
 
-.images-container
-  margin-top: 50px
-  overflow: hidden
+section.pictures
+  .images-container
+    margin-top: 50px
+    overflow: hidden
+  ul
+    width: 100%
+    margin: 0
+    padding: 0
+  li
+    display: inline-block
+    width: 30%
+    margin-right: 3%
+    img
+      max-width: 100%
+    &:last-child
+      margin-right: 0
 
-.first-image, .second-image, .third-image
-  float: left
-  width: 30%
-  margin-right: 5%
-  img
-    max-width: 100%
-
-.third-image
-  margin-right: 0
-
-.image-container
-  height: 150px
-  margin-bottom: 20px
-  overflow: hidden
+  figure
+    height: 150px
+    margin-bottom: 20px
+    overflow: hidden
