@@ -256,12 +256,20 @@ section {
   padding: 0 1em; }
 
 section[role="main"] {
-  margin-bottom: 3em; }
+  margin-bottom: 3em;
+  transition: height 2s ease-in-out;
+  overflow: hidden; }
   section[role="main"] article {
     margin-bottom: 2em; }
     section[role="main"] article h2 {
       text-transform: uppercase;
       letter-spacing: 0.01em; }
+
+.readmore {
+  margin: -1em 0 2em 1em; }
+
+.readingAllShadow {
+  box-shadow: inset 0 -10px 10px rgba(0, 0, 0, 0.1); }
 
 section.pictures {
   margin-bottom: 3em; }
