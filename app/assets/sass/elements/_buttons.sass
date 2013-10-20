@@ -1,6 +1,11 @@
-.button
-  background-color: #1E344C
-  padding: 10px
+button
+  background-color: $button
+  padding: 0.75em
   color: white
-  margin-top: 10px
   text-decoration: none
+  border: none
+  text-shadow: 1px 1px 0 black
+  &:hover
+    background-color: darken($button, 10%)
+  &:active
+    background-color: lighten($button, 10%)
