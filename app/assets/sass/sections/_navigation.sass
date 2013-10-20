@@ -2,17 +2,19 @@ nav
   font-family: arial
   ul
     list-style: none
+    width: 100%
+    margin: 0
+    padding: 0
+  a
+    display: block
+    width: 100%
 
 // Header Navigation
 nav.main
   text-align: center
   background-color: $brand
   ul
-    width: 100%
-    display: inline-block
     height:  60px
-    margin: 0
-    padding: 0
     line-height: 60px
     li
       display: inline-block
@@ -25,13 +27,9 @@ nav.main
         background: transparent url('../images/logo.png') 50% 10px no-repeat
         @extend %ir
       a
-        display: block
-        width: 100%
         height: 60px
         color: white
         text-decoration: none
-        &:hover
-          text-decoration: underline
 
 .subnavigation
   margin-bottom: 3em
@@ -39,39 +37,27 @@ nav.main
   background-color: $bg_light
   ul
     height:  60px
-    margin: 0
-    padding: 0
     li
       display: inline-block
       height: 60px
       width: auto
       margin: 0
       a
-        display: block
         color: $text
         text-decoration: none
         line-height: 60px
         padding: 0 1em
-        &:hover
-          text-decoration: underline
 
 // Footer Navigation
 footer
   nav
     display: inline-block
-    width: 25%
+    width: 24.5%
+    padding-left: 1em
+    li
+      padding: 0.6em 0
   h3
     text-transform: uppercase
-    margin-bottom: 20px
-  ul
-    margin: 0
-    padding: 0
-    li
-      margin: 0
-      display: block
-      padding: 10px 0
+    margin-bottom: 1.2em
   a
     text-decoration: none
-    color: #1E344C
-    &:hover
-      text-decoration: underline
