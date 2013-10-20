@@ -1,36 +1,37 @@
 nav
   font-family: arial
+  ul
+    list-style: none
 
 // Header Navigation
-header
-  nav.main
-    text-align: center
-    background-color: $brand
-    ul
-      width: 100%
+nav.main
+  text-align: center
+  background-color: $brand
+  ul
+    width: 100%
+    display: inline-block
+    height:  60px
+    margin: 0
+    padding: 0
+    line-height: 60px
+    li
       display: inline-block
-      height:  60px
+      vertical-align: middle
+      text-align: center
+      height: 60px
       margin: 0
-      padding: 0
-      line-height: 60px
-      li
-        display: inline-block
-        vertical-align: middle
-        text-align: center
+      width: 16%
+      &:first-child
+        background: transparent url('../images/logo.png') 50% 10px no-repeat
+        @extend %ir
+      a
+        display: block
+        width: 100%
         height: 60px
-        margin: 0
-        width: 16%
-        &:first-child
-          background: transparent url('../images/logo.png') 50% 10px no-repeat
-          @extend %ir
-        a
-          display: block
-          width: 100%
-          height: 60px
-          color: white
-          text-decoration: none
-          &:hover
-            text-decoration: underline
+        color: white
+        text-decoration: none
+        &:hover
+          text-decoration: underline
 
 .subnavigation
   margin-bottom: 3em
@@ -57,8 +58,8 @@ header
 // Footer Navigation
 footer
   nav
+    display: inline-block
     width: 25%
-    margin-bottom: 20px
   h3
     text-transform: uppercase
     margin-bottom: 20px
