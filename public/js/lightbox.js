@@ -1,18 +1,18 @@
 (function() {
 
-  var lpLightbox = function(section) {
+  var LpLightbox = function(section) {
     this.$pictureSection = $(section);
     this.$overlay = $('<div class="overlay"></div>');
     this.$fullImg = $('<img class="fullSize" />');
     this.initialize();
   };
 
-  lpLightbox.prototype.initialize = function() {
+  LpLightbox.prototype.initialize = function() {
       this.doTheLightbox();
       this.getRidOfIt();
     };
 
-  lpLightbox.prototype.doTheLightbox = function() {
+  LpLightbox.prototype.doTheLightbox = function() {
       var $images = this.$pictureSection.find('img'),
           _this = this;
       $images.on('click', function(e) {
@@ -23,7 +23,7 @@
       });
     };
 
-  lpLightbox.prototype.getRidOfIt = function() {
+  LpLightbox.prototype.getRidOfIt = function() {
       var _this = this;
       $('body').on('click', '.overlay, .fullSize', function() {
         $('.overlay, .fullSize').fadeOut(function(){
@@ -32,6 +32,6 @@
       });
     };
 
-  var lpLight = new lpLightbox('section.pictures');
+  var lpLight = new LpLightbox('section.pictures');
 
 })();
