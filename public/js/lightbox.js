@@ -24,11 +24,19 @@
     };
 
   LpLightbox.prototype.getRidOfIt = function() {
-      var _this = this;
-      $('body').on('click', '.overlay, .fullSize', function() {
+      var _this = this,
+          $body = $('body');
+      $body.on('click', '.overlay, .fullSize', function() {
         $('.overlay, .fullSize').fadeOut(function(){
           $('.overlay, .fullSize').remove();
         });
+      });
+      $body.on('keyup', function(e) {
+        if (e.keyCode === 13 || e.keyCode === 27) {
+          $('.overlay, .fullSize').fadeOut(function(){
+            $('.overlay, .fullSize').remove();
+          });
+        }
       });
     };
 
