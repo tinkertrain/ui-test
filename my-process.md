@@ -33,6 +33,8 @@
 
 - First thing, move to plain JS instead of coffescript (style choosing)
 - There are 2 functionalities in the page, both in the same file (readmore and lightbox). Separate them into their own file as modules.
+- Grouped all the functionality into factory functions
+- All the methods are stored in the respective prototype for better perfomance
 
 
       
@@ -75,7 +77,13 @@
 
 ###Readmore
 
-- Grouped all the functionality into a single object "readMore"
 - Uses CSS transitions
 - Graceful degradation: this functionality only exists if JS is enabled in the browser, if JS is unavailable, all the text shows and there's no "read more" button.
+- Miny API, you can pass which section needs the readmore functionality (passing a css selector) and the height when collapsed.
+
+
+###Lightbox
+
+- API: you can pass the section of the images to have a lightbox.
+- You can click anywhere or press escape to close the lightbox.
  
