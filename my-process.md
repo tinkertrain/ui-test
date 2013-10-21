@@ -40,7 +40,7 @@
       
 #Detailed changes
 
-##Global
+###Global
 
 - Font sizes in ems
 - Try to use only margin bottom in elements
@@ -48,7 +48,7 @@
 - Added `box-sizing: border-box` to everything
 
 
-##Header
+###Header
 
 - Wrapped the header in a `<header>` tag for semantic purposes.
 
@@ -79,7 +79,7 @@
 
 - Uses CSS transitions
 - Graceful degradation: this functionality only exists if JS is enabled in the browser, if JS is unavailable, all the text shows and there's no "read more" button.
-- Miny API, you can pass which section needs the readmore functionality (passing a css selector) and the height when collapsed.
+- Mini API, you can pass which section needs the readmore functionality (passing a css selector) and the height when collapsed.
 
 
 ###Lightbox
